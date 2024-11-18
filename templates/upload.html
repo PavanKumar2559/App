@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cotton Plant Disease</title>
+    <style>
+        body {
+            background-image: url("bg.jpeg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.357);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(50, 212, 58, 0.583);
+            width: 70%;
+            height: 400px;
+            opacity: 1;
+        }
+        .content {
+            text-align: center;
+        }
+        .image-container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: 150px; /* Adjust the height as needed */
+            box-shadow: 0px 0px 10px rgba(122, 226, 87, 0.685);
+            border-radius: 10px;
+        }
+        .upload-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #7c4dff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px rgba(87, 89, 226, 0.685);
+            font-weight: bold;
+        }
+        h2 {
+            margin-top: 5px;
+            font-size: 75px;
+            margin-bottom: 10px;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        p2 {
+            margin-top: 7px;
+            color: rgb(29, 27, 27);
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <!-- Add the logo or image above the title -->
+            <div class="image-container">
+                <img src="logo.png" alt="Team Logo" class="team-logo" />
+            </div>
+            
+            <h2>COTTON PLANT DISEASE PREDICTION</h2>
+            <form method="POST" enctype="multipart/form-data">
+                <input class="upload-btn" type="file" name="file" accept="image/*" />
+                <button type="submit" class="upload-btn">Upload Image</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
